@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products – Maxso Pharmaceutical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+  <img src="2024-12-30.jpg" 
+       alt="Maxso Logo"
+       class="w-12 h-12 object-contain">
+
+  <h1 class="text-2xl font-bold text-blue-700">
+    Maxso Pharmaceutical
+  </h1>
+</div>
+
+
+ <div class="relative">
+      <button onclick="toggleKebab()" class="text-3xl font-bold px-3 hover:bg-gray-100 rounded">
+        ...
+      </button>
+
+      <div id="kebabMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
+        <a href="products.html" class="block px-4 py-2 hover:bg-gray-100">Products</a>
+        <a href="service.html" class="block px-4 py-2 hover:bg-gray-100">Service</a>
+        <a href="divisions.html" class="block px-4 py-2 hover:bg-gray-100">Division</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<script>
+  function toggleKebab() {
+    document.getElementById("kebabMenu").classList.toggle("hidden");
+  }
+
+  document.addEventListener("click", function(event) {
+    const menu = document.getElementById("kebabMenu");
+    if (!event.target.closest(".relative")) {
+      menu.classList.add("hidden");
+    }
+  });
+</script>
+
+</header>
+
+<!-- PRODUCTS SECTION -->
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h1 class="text-4xl font-bold text-blue-700 mb-10">
+      Our Products
+    </h1>
+
+    <!-- CATEGORY BUTTONS -->
+    <div class="flex justify-center gap-6 mb-12 flex-wrap">
+
+      <button class="category-btn px-4 py-2 rounded bg-blue-600 text-white"
+              data-category="all">
+        All Products
+      </button>
+
+      <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="vitamins">
+        Vitamins & Immunity
+      </button>
+
+      <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="gastric">
+        Gastric Care
+      </button>
+
+      <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="sleep">
+        Sleep Aid
+      </button>
+
+      <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="neurology">
+        Neurology & Migraine
+      </button>
+ <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="neuropathy">
+        Diabetic Neuropathy
+      </button>
+
+      <button class="category-btn px-4 py-2 rounded bg-gray-200 text-gray-700"
+              data-category="vertigo">
+        Vertigo Treatment
+      </button>
+
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Maxsovit -->
+      <div class="product-card vitamins bg-white p-6 rounded-xl shadow">
+        <img src="Maxsovit Carton (3).jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Maxsovit">
+        <h2 class="text-xl font-bold mb-2">Maxsovit</h2>
+        <p class="text-gray-700 text-sm">
+          Improves nerve function, ensures normal body metabolism,
+          prevents oxidative stress, boosts immunity and stamina.
+        </p>
+      </div>
+
+      <!-- Pantblu -->
+      <div class="product-card gastric bg-white p-6 rounded-xl shadow">
+        <img src="Pantblu Carton (3).jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Pantblu">
+        <h2 class="text-xl font-bold mb-2">Pantblu Tablets</h2>
+        <p class="text-gray-700 text-sm">
+          Controls acid reflux, improves gastric emptying,
+          reduces bloating and nausea.
+        </p>
+      </div>
+
+      <!-- Zolpidoze M-5 -->
+      <div class="product-card sleep bg-white p-6 rounded-xl shadow">
+        <img src="Zolpidoze M-5.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Zolpidoze M-5">
+        <h2 class="text-xl font-bold mb-2">Zolpidoze M-5</h2>
+        <p class="text-gray-700 text-sm">
+          Helps initiate and maintain sleep,
+          improves sleep quality and treats insomnia.
+        </p>
+      </div>
+<!-- Zolpidoze M-10 -->
+      <div class="product-card sleep bg-white p-6 rounded-xl shadow">
+        <img src="Zolpidoze M-10.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Zolpidoze M-10">
+        <h2 class="text-xl font-bold mb-2">Zolpidoze M-10</h2>
+        <p class="text-gray-700 text-sm">
+          Helps initiate and maintain sleep,
+          improves sleep quality and treats insomnia.
+        </p>
+      </div>
+
+      <!-- Divalmax 250 -->
+      <div class="product-card neurology bg-white p-6 rounded-xl shadow">
+        <img src="dival max od 250.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Divalmax 250">
+        <h2 class="text-xl font-bold mb-2">Divalmax OD 250</h2>
+        <p class="text-gray-700 text-sm">
+          Used in seizures, bipolar disorder and migraine prevention
+          by reducing abnormal electrical activity in the brain.
+        </p>
+      </div>
+
+      <!-- Divalmax 500 -->
+      <div class="product-card neurology bg-white p-6 rounded-xl shadow">
+        <img src="dival max od 500.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Divalmax 500">
+        <h2 class="text-xl font-bold mb-2">Divalmax OD 500</h2>
+        <p class="text-gray-700 text-sm">
+          Produces calming effect on brain
+          and effectively prevents migraine symptoms.
+        </p>
+      </div>
+
+      <!-- Vertimind 8 -->
+      <div class="product-card vertigo bg-white p-6 rounded-xl shadow">
+        <img src="Vertimind-8.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Vertimind 8">
+        <h2 class="text-xl font-bold mb-2">Vertimind 8 mg</h2>
+        <p class="text-gray-700 text-sm">
+          Improves cochlear and cerebral circulation
+          and treats peripheral vertigo.
+        </p>
+      </div>
+
+      <!-- Vertimind 16 -->
+      <div class="product-card vertigo bg-white p-6 rounded-xl shadow">
+        <img src="Vertimind-16 Carton (3).jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Vertimind 16">
+        <h2 class="text-xl font-bold mb-2">Vertimind 16 mg</h2>
+        <p class="text-gray-700 text-sm">
+          Helps control endolymphatic pressure
+          and reduces vertigo symptoms.
+        </p>
+      </div>
+
+      <!-- Vertimind 24 -->
+      <div class="product-card vertigo bg-white p-6 rounded-xl shadow">
+        <img src="Vertimind-24 Carton (3).jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Vertimind 24">
+        <h2 class="text-xl font-bold mb-2">Vertimind 24 mg</h2>
+        <p class="text-gray-700 text-sm">
+          Reduces Meniere’s disease symptoms,
+          relieves spinning sensation
+          and protects hearing.
+        </p>
+      </div>
+ <!-- Benfolev Forte -->
+      <div class="product-card neuropathy bg-white p-6 rounded-xl shadow">
+        <img src="benfolev forte.jpg"
+             class="w-50 h-50 mx-auto object-contain mb-4"
+             alt="Benfolev Forte">
+        <h2 class="text-xl font-bold mb-2">Benfolev Forte</h2>
+        <p class="text-gray-700 text-sm">
+          Helps initiate and maintain sleep,
+          improves sleep quality and treats insomnia.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-300 pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- COMPANY -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="2024-12-30.jpg"
+             class="w-12 h-12 rounded-lg"
+             alt="Maxso Logo">
+
+        <div>
+          <h2 class="text-white text-xl font-bold">Maxso</h2>
+          <p class="text-sm text-gray-400">Pharmaceutical</p>
+        </div>
+      </div>
+
+      <p class="text-sm leading-relaxed text-gray-400">
+        Your trusted partner in health and wellness.
+        Providing quality pharmaceutical services since 2025.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+       <li><a href="divisons.html" class="hover:text-white">division</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact Info</h3>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3 items-start">
+          📞 <span>9840991928</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📧 <span>maxsopharmaceutical@gmail.com</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📍 <span>No a-1, 18th Street, Nehru Colony, Pazhavanthangal</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Opening Hours</h3>
+      <ul class="space-y-3 text-sm">
+        <li>🕒 Monday – Friday<br>
+          <span class="text-gray-400">8:00 AM – 8:00 PM</span>
+        </li>
+        <li>🕒 Saturday – Sunday<br>
+          <span class="text-gray-400">9:00 AM – 6:00 PM</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+    © 2025 Maxso Pharmaceutical. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- FILTER SCRIPT -->
+<script>
+  const buttons = document.querySelectorAll(".category-btn");
+  const products = document.querySelectorAll(".product-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      buttons.forEach(btn => {
+        btn.classList.remove("bg-blue-600", "text-white");
+        btn.classList.add("bg-gray-200", "text-gray-700");
+      });
+
+      button.classList.remove("bg-gray-200", "text-gray-700");
+      button.classList.add("bg-blue-600", "text-white");
+
+      const category = button.dataset.category;
+
+      products.forEach(product => {
+        if (category === "all") {
+          product.classList.remove("hidden");
+        } else {
+          product.classList.toggle(
+            "hidden",
+            !product.classList.contains(category)
+          );
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
